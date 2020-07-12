@@ -26,13 +26,13 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="Selected Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, info3, url, repo, img, id, alt } = project;
 
             return (
               <Row key={id}>
-                <Col lg={4} sm={12}>
+                <Col lg={6} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -44,7 +44,8 @@ const Projects = () => {
                       <h3 className="project-wrapper__text-title">{title}</h3>
                       <div>
                         <p>{info}</p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <p>{info2}</p>
+                        <p className="mb-4">{info3}</p>
                       </div>
                       {url && (
                         <a
@@ -69,7 +70,7 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={8} sm={12}>
+                <Col lg={6} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -98,7 +99,7 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            <ProjectImg alt={alt} filename={img} />
                           </div>
                         </Tilt>
                       </a>

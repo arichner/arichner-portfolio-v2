@@ -14,16 +14,14 @@ const Contact = () => {
         <Title title="Contact" />
         <Fade bottom duration={500} delay={400} distance="30px">
           <div className="contact-wrapper">
-            <p className="contact-wrapper__text">
-              {cta || 'Would you like to work with me? Awesome!'}
-            </p>
+            <p className="contact-wrapper__text">{cta}</p>
             <a
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
               href={email ? `mailto:${email}` : ' '}
             >
-              {btn || "Let's Talk"}
+              {btn}
             </a>
           </div>
         </Fade>
