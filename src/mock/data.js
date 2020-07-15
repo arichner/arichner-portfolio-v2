@@ -21,10 +21,10 @@ export const aboutData = {
   paragraphOne:
     'Software engineering is my second career but my first passion. A decade in the publishing industry taught me the finer points of a dying trade, and gave me the superpower of spotting every typo on every restaurant menu I encounter, much to my own chagrin.',
   paragraphTwo:
-    "From my first simple Java application, I was hooked on coding. I took any excuse to write code, at work and at home. I'd found my calling. Later, in graduate school, I learned the core skills of a Software Engineer: architecture, design, project management, formal methods, data modeling, and how to communicate complex ideas in straightforward ways.",
+    "From my first simple web application, I've loved building applications. I'd found my calling. In graduate school, I learned the critical skills of a Software Engineer: architecture, design, project management, formal methods, data modeling, and how to communicate complex ideas in straightforward ways.",
   paragraphThree:
     "I thrive in environments where I learn new things every day. I perform best when challenged, and am most engaged when I can't figure something out.",
-  resume: 'https://linkedin.com/in/awrichner', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1HTzvvg87yyBVvIUZcvYlPjb0SSHdt_cr/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
